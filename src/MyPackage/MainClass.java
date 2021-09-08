@@ -8,5 +8,6 @@ public static void main(String args[]) {
 		game.shuffle(players.numberOfPlayers);
 		game.distributeCards(players.numberOfPlayers);
 		game.displayEachPlayerCards(players.numberOfPlayers);
+		game.displayEachPlayerCardsBasedOnRank(players.numberOfPlayers);
 	}
 }
