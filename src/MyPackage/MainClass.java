@@ -6,12 +6,17 @@ package MyPackage;
 public class MainClass {
 	
 	public static void main(String args[]) {
-		CardGame[] gamers=new CardGame[4];//4 players are participating 
+		/*CardGame[] gamers=new CardGame[4];//4 players are participating 
 		
 		for(int i=0;i<gamers.length;i++) {
 			gamers[i]=new CardGame();
-			gamers[i].printCards();//printing each player cards
+			gamers[i].printCards();//printing each player cards*/
+		
+		CardGame gamers=new CardGame();//4 players are participating 
+		gamers.printCards();
+		
 	}
+	
 
 }
-}
+

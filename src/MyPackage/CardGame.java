@@ -1,22 +1,37 @@
 package MyPackage;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /*this class is common
  * for all the players
  * each player will get his unique cards
  */
 
 public class CardGame {
-	//Player[] players=new Player[4];//4 players are participating 
 	
 	public String[] rank;
 	public String[] suit;
-	 
+	public Set<String> cards = new HashSet<String>();
+	public int count=0;
 	
 
 	
 	CardGame(){//constructor to intialize values
 		suit=new String[]{"Clubs", "Diamonds", "Hearts", "Spades"};
 		rank=new String[]{"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
-		
+		for(int i=0;i<52;i++) {
+			while(true) {
+				int row=((int) ((Math.random() * (4 - 1)) + 1));
+				int column=((int) ((Math.random() * (13 - 1)) + 1));
+				if(!cards.contains(String.valueOf(row+"+"+column)));
+					{cards.add(String.valueOf(row+"+"+column));
+					break;
+					}
+				
+			}
+			
+		}
 	}
 
 	
@@ -31,9 +46,18 @@ public class CardGame {
 		for(int i=0;i<rank.length;i++) {
 			System.out.print(rank[i]+" ,");}
 		System.out.println("}");
+		System.out.print(cards);
 		
+		/*int i=0;
+		while(i<52) {
+			for(int j=0;j<9;j++)
+			System.out.print(cards.);
+			System.out.println();
+		}
+		*/
 		
 	}
+	
 	
 	
 }
