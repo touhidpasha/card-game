@@ -13,7 +13,7 @@ public class MainClass {
 			gamers[i].printCards();//printing each player cards*/
 		
 		CardGame gamers=new CardGame();//4 players are participating 
-		gamers.printCards();
+		
 		
 	}
 	
