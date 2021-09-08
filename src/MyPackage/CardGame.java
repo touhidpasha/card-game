@@ -13,7 +13,8 @@ public class CardGame {
 	public String[] rank;
 	public String[] suit;
 	public Set<String> cards = new HashSet<String>();
-	public int count=0;
+	CardGame gamers=new CardGame();
+	Players players=new Players(4);//setting players count 4
 	
 
 	
