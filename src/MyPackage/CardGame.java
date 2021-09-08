@@ -71,17 +71,7 @@ public class CardGame {
 	
 
 	public void displayEachPlayerCardsBasedOnRank(int numberOfPlayers) {
-		//int getIndex = Arrays.asList(array1).indexOf(8);
-		//Arrays.sort(myArr, (a, b) -> Double.compare(a[0], b[0]));
-		/*int count=9;
-		for(int i=0;i<numberOfPlayers;i=i+9) {
-			Arrays.sort(players, i, i+9);
-
-		}
-		for(int i=0;i<numberOfPlayers;i=i++)
-			Arrays.sort(players,(a,b)->String.compare(a[i],b[i]));
 		
-		*/
 		//players.
 		String[] arr=new String[20];
 		for(int i=0;i<numberOfPlayers;i++)
@@ -108,7 +98,7 @@ public class CardGame {
 		}
 		
 		
-		//displayEachPlayerCards(numberOfPlayers);
+		
 	}
 	
 	
