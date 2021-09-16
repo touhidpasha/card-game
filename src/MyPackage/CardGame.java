@@ -25,7 +25,7 @@ public class CardGame {
 	
 	CardGame(){//constructor to intialize values
 		suit=new String[]{"","Clubs", "Diamonds", "Hearts", "Spades"};
-		rank=new String[]{"","2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+		rank=new String[]{"","2","3","4","5","6","7","8","9","10","Jack","queen","King","ace"};
 		
 	}
 
@@ -81,8 +81,8 @@ public class CardGame {
 			}
 			//Arrays.sort(arr);
 			for(int i1=0;i1<rank.length-1;i1++) 
-				for(int j1=0;j1<rank.length-2;j1++) {
-					if(arr[i1].compareTo(arr[j1])>1) {
+				for(int j1=i1+1;j1<rank.length-1;j1++) {
+					if(arr[i1].compareTo(arr[j1])<1) {
 						String t=arr[i1];
 						arr[i1]=arr[j1];
 						arr[j1]=t;
